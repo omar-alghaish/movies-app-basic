@@ -1,0 +1,11 @@
+.movieslist{
+    margin:50px auto;
+    padding-top: 50px;
+    width: 80%;
+    height: max-content;
+    background-color:rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+    grid-gap: 20px;
+    border-radius: 50px;
+}

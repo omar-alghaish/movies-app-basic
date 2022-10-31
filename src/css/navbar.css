@@ -1,0 +1,50 @@
+.navbarr {
+    position:fixed;
+    z-index:1;
+    background: rgb(44, 45, 49);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.inputt {
+    width: 90%;
+    height: 40px;
+    padding:0 25px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    color: #303232;
+    background-color:#eeeeee;
+    font-weight: 100;
+}
+
+input::placeholder {
+    color: #9dabb1;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.271);
+}
+
+.buttonn {
+    width: 100px;
+    margin-right: 20px;
+    background:#73d101;
+    color: #fff;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+}
