@@ -1,7 +1,7 @@
 
 import axios, { Axios } from 'axios';
 import React, { useEffect, useMemo, useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navebar from './commponnet/Navbar';
 import Container from './commponnet/container';
 import Moviedetails from './commponnet/Moviedetails';
@@ -45,8 +45,21 @@ const dispatch = useDispatch();
   }
   return (
     <div>
-      <Navebar search={search} />
-      <Container movies={movies} pagenumber={getpagenumber} pagecount={pageCount} />
+       <Router basename={'/movies-app-basic'}>
+        <Navebar search={search} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Container
+                movies={movies}
+                pagenumber={getpagenumber}
+                pagecount={pageCount}
+              />
+            }
+          />
+        </Routes>
+      </Router>
       </div>
   )
 }
